@@ -9,7 +9,7 @@ theme.path = theme.root_path .. "theme.lua"
 theme.icons_path = theme.root_path .. "icons/"
 theme.mode_file_path = theme.root_path .. "mode"
 
-theme.mode = read_file_content(theme.mode_file_path)
+theme.mode = "light" --dark
 
 theme.font_family = "Droid Sans "
 theme.font_family_mono = theme.font_family .. "Mono "
@@ -85,7 +85,7 @@ theme.notification_border_color = theme.background_color
 theme.notification_opacity = 0.8
 theme.notification_icon_size = dpi(48)
 theme.notification_shape = function(cr, width, height)
-  gears.shape.rounded_rect(cr, width, height, dpi(30))
+  gears.shape.rounded_rect(cr, width, height, 3)
 end
 
 -- | Menu | --
